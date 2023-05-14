@@ -1,21 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-
-const reactContentRoot=document.getElementById('root')
-
-
-
-const App=()=>{
-    const myItem='mike'
-    
-    return(    
-    <ul>
-        <li>item1</li> 
-        <li>item255 {myItem}</li>    
-        <li>{myItem.toUpperCase()}</li>
-    </ul>
-    )
-}
+import App from "./components/App"
+import './styles/global.css'
 
 
-ReactDOM.render(<App />,reactContentRoot) 
+ReactDOM.render(<App />,document.getElementById('root')) 
